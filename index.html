@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro de Herramientas Tech & Optimización. Scripts y herramientas profesionales para mejorar tu sistema al máximo.">
+    <title>Tech Center - Herramientas Tech & Optimización</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fas fa-microchip"></i></div>
+                <span>Tech Center</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#scripts">Scripts</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i>
+                <span>Optimización Profesional para Windows</span>
+            </div>
+            
+            <h1 class="slide-up">
+                Centro de <span>Herramientas Tech</span> & Optimización
+            </h1>
+            
+            <p class="hero-subtitle slide-up delay-1">
+                Scripts y herramientas profesionales para mejorar tu sistema al máximo. 
+                Limpieza, reparación y optimización avanzada para Windows 10/11.
+            </p>
+            
+            <div class="hero-stats slide-up delay-2">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Scripts PRO</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Descargas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Satisfacción</div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons slide-up delay-3">
+                <a href="#scripts" class="btn btn-primary">
+                    <i class="fas fa-code"></i> Ver Scripts
+                </a>
+                <a href="#herramientas" class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Descargar Herramientas
+                </a>
+                <a href="#scripts" class="btn btn-success">
+                    <i class="fas fa-rocket"></i> Optimizar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts Section -->
+    <section class="scripts-section" id="scripts">
+        <div class="section-header">
+            <span class="section-tag">Scripts de Limpieza</span>
+            <h2 class="section-title">Optimización <span>Avanzada</span></h2>
+            <p class="section-desc">
+                15 scripts profesionales para limpiar, reparar y optimizar tu sistema Windows. 
+                Cada script incluye código fuente, instrucciones detalladas y guía de reversión.
+            </p>
+        </div>
+        
+        <!-- Búsqueda y Filtros -->
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="script-search" placeholder="Buscar scripts...">
+        </div>
+        
+        <div class="scripts-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="limpieza">Limpieza</button>
+            <button class="filter-btn" data-filter="rendimiento">Rendimiento</button>
+            <button class="filter-btn" data-filter="red">Red/Internet</button>
+            <button class="filter-btn" data-filter="reparacion">Reparación</button>
+            <button class="filter-btn" data-filter="pro">Suite PRO</button>
+        </div>
+        
+        <!-- Grid de Scripts -->
+        <div class="scripts-grid" id="scripts-container">
+            <!-- Los scripts se generan dinámicamente con JavaScript -->
+        </div>
+    </section>
+
+    <!-- Herramientas Section -->
+    <section class="tools-section" id="herramientas">
+        <div class="section-header">
+            <span class="section-tag">Descargas Recomendadas</span>
+            <h2 class="section-title">Herramientas <span>Profesionales</span></h2>
+            <p class="section-desc">
+                Software esencial para diagnóstico, recuperación de datos, optimización 
+                y mantenimiento de tu sistema.
+            </p>
+        </div>
+        
+        <div class="tools-grid" id="tools-container">
+            <!-- Las herramientas se generan dinámicamente -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer-content">
+            <div class="footer-logo">Tech Center</div>
+            <p>Tu centro de confianza para optimización y herramientas tech</p>
+            
+            <div class="footer-links">
+                <a href="mailto:techcontacto2026@gmail.com"><i class="fas fa-envelope"></i> techcontacto2026@gmail.com</a>
+                <a href="https://wa.me/50660941491" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--color-text-muted);">
+                Lunes a Viernes: 9:00 AM - 5:00 PM | Sábados y Domingos: 10:00 AM - 6:00 PM
+            </p>
+            
+            <p style="margin-top: 2rem; font-size: 0.875rem;">
+                © 2026 Tech Center. Todos los derechos reservados. 
+                <br>Los scripts se proporcionan tal cual. Úsalos bajo tu responsabilidad.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de Contacto -->
+    <button class="floating-btn" onclick="alert('Contacto:\n\n📧 Email: techcontacto2026@gmail.com\n📱 WhatsApp: +506 6094-1491\n\nHorario de atención:\nLunes a Viernes: 9:00 AM - 5:00 PM\nSábados y Domingos: 10:00 AM - 6:00 PM')">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Modal de Descarga -->
+    <div class="download-modal" id="download-modal">
+        <div class="modal-content">
+            <div class="modal-loader"></div>
+            <h3 id="modal-title">Descargando...</h3>
+            <p id="modal-text">Preparando archivo ZIP...</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
