@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR LOS CAMBIOS - Limpieza Temporal v2.0
+═══════════════════════════════════════════════════════════════════
+
+⚠️ IMPORTANTE: Este script SOLO ELIMINA ARCHIVOS TEMPORALES
+Los archivos temporales se recrean automáticamente por Windows.
+NO SE PUEDE ni es necesario "revertir" esta limpieza.
+
+───────────────────────────────────────────────────────────────────
+INFORMACIÓN SOBRE LOS ARCHIVOS ELIMINADOS:
+───────────────────────────────────────────────────────────────────
+
+1. %TEMP% (Carpeta temporal del usuario)
+   → Windows recrea esta carpeta automáticamente
+   → Los programas generan nuevos archivos temp al ejecutarse
+
+2. Windows\Temp
+   → Archivos temporales del sistema
+   → Se regeneran automáticamente
+
+3. Prefetch
+   → Caché de programas para inicio rápido
+   → Windows reconstruye el prefetch al usar programas
+   → El prefetch "viejo" puede ralentizar el sistema
+
+4. Windows Update Download
+   → Archivos de actualizaciones ya instaladas
+   → Windows descarga nuevos si son necesarios
+
+5. Caché de navegador
+   → Se regenera al navegar por internet
+
+6. Reportes de error (WER)
+   → Archivos de diagnóstico de fallos antiguos
+   → No afectan al funcionamiento del sistema
+
+───────────────────────────────────────────────────────────────────
+SI EXPERIMENTAS PROBLEMAS (RARO):
+───────────────────────────────────────────────────────────────────
+
+El sistema va más lento:
+→ Es normal los primeros minutos después de limpiar prefetch
+→ Windows reconstruye la caché de programas usados frecuentemente
+→ El rendimiento mejora después de reiniciar
+
+Un programa no funciona:
+→ Reinicia el programa
+→ Si persiste, reinstala el programa
+
+Páginas web cargan más lento:
+→ La primera vez es normal (se regenera caché)
+→ Las siguientes cargas serán normales
+
+───────────────────────────────────────────────────────────────────
+NO ES NECESARIO REVERTIR - TODO ES RECUPERABLE
+────────────────────────────────────────────────────────────────═══

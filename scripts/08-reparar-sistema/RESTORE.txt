@@ -1,0 +1,49 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Reparación del Sistema
+═══════════════════════════════════════════════════════════════════
+
+⚠️ ESTE SCRIPT NO REQUIERE REVERSIÓN
+
+Este script NO hace cambios permanentes que deban revertirse:
+→ Verifica archivos del sistema
+→ Repara archivos corruptos (restaurando la versión correcta)
+→ Corrige daños en la imagen de Windows
+
+───────────────────────────────────────────────────────────────────
+¿QUÉ HACEN ESTAS HERRAMIENTAS?
+───────────────────────────────────────────────────────────────────
+
+SFC (System File Checker):
+→ Compara archivos del sistema con la versión original
+→ Reemplaza archivos corruptos/modificados por los correctos
+→ RESTAURA el sistema a su estado correcto, no lo "cambia"
+
+DISM (Deployment Image Servicing and Management):
+→ Repara la imagen de Windows usando archivos de actualización
+→ Corrige daños que SFC no puede reparar
+→ Usa Windows Update para obtener archivos correctos
+
+───────────────────────────────────────────────────────────────────
+¿POR QUÉ NO REVERTIR?
+───────────────────────────────────────────────────────────────────
+
+Si el script reparó algo:
+→ Restauró archivos a su estado CORRECTO
+→ Revertir significaría VOLVER A TENER archivos corruptos
+→ No tiene sentido "deshacer" una reparación
+
+Si el script NO encontró problemas:
+→ No hizo cambios, no hay nada que revertir
+
+───────────────────────────────────────────────────────────────────
+SI TIENES PROBLEMAS DESPUÉS:
+───────────────────────────────────────────────────────────────────
+
+1. Reinicia en Modo Seguro y ejecuta de nuevo
+2. Si persiste, usa: Configuración → Actualización y seguridad
+   → Recuperación → Restaurar sistema
+3. Como último recurso: Restablecer Windows conservando archivos
+
+───────────────────────────────────────────────────────────────────
+NO REVIERTAS UNA REPARACIÓN - SOLO LA REPITES SI ES NECESARIO
+────────────────────────────────────────────────═══════════════════

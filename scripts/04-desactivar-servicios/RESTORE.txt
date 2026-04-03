@@ -1,0 +1,61 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Servicios Desactivados
+═══════════════════════════════════════════════════════════════════
+
+✅ REVERSIÓN INCLUIDA: Este paquete incluye REVERTIR_SERVICIOS.BAT
+
+───────────────────────────────────────────────────────────────────
+PARA REVERTIR LOS CAMBIOS:
+───────────────────────────────────────────────────────────────────
+
+1. Ubica el archivo REVERTIR_SERVICIOS.BAT (en esta misma carpeta)
+2. Haz clic derecho → "Ejecutar como administrador"
+3. Espera a que termine el proceso
+4. Reinicia tu PC
+
+Esto restaurará TODOS los servicios a su configuración original.
+
+───────────────────────────────────────────────────────────────────
+SERVICIOS AFECTADOS Y SU FUNCIÓN:
+───────────────────────────────────────────────────────────────────
+
+DiagTrack (Telemetría)
+→ Recopila datos de uso para Microsoft
+→ NO esencial para el funcionamiento
+
+Geolocalización y Mapas
+→ Usado por apps que necesitan ubicación
+→ NO esencial si no usas apps de ubicación
+
+Biometría (WbioSrvc)
+→ Windows Hello, huella digital, reconocimiento facial
+→ ESENCIAL si usas estos métodos de inicio de sesión
+
+Servicios Xbox
+→ Necesarios para juegos de Microsoft Store/Xbox Live
+→ NO esencial si no juegas juegos de Xbox
+
+Windows Search (WSearch)
+→ Indexa archivos para búsqueda rápida
+→ ESENCIAL si buscas archivos frecuentemente
+
+SysMain (Superfetch)
+→ Pre-carga programas usados frecuentemente en RAM
+→ Recomendado DESACTIVAR solo en SSD modernos
+
+Spooler de impresión
+→ NECESARIO para imprimir documentos
+→ ESENCIAL si usas impresora
+
+───────────────────────────────────────────────────────────────────
+REVERSIÓN MANUAL (alternativa):
+───────────────────────────────────────────────────────────────────
+
+1. Presiona Win + R, escribe: services.msc
+2. Busca cada servicio desactivado
+3. Haz doble clic en el servicio
+4. Cambia "Tipo de inicio" a "Automático"
+5. Haz clic en "Iniciar" y luego "Aceptar"
+
+───────────────────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════════════

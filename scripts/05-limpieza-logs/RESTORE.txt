@@ -1,0 +1,46 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Limpieza de Logs
+═══════════════════════════════════════════════════════════════════
+
+⚠️ ESTE SCRIPT NO REQUIERE REVERSIÓN
+
+Los archivos de registro (logs) son:
+→ Archivos de texto con información de eventos pasados
+→ NO son necesarios para el funcionamiento del sistema
+→ Se regeneran automáticamente cuando ocurren nuevos eventos
+
+───────────────────────────────────────────────────────────────────
+¿SON IMPORTANTES LOS LOGS?
+───────────────────────────────────────────────────────────────────
+
+Sí, pero de forma temporal:
+→ Útiles para diagnosticar problemas recientes
+→ No necesarios después de resolver un problema
+→ Ocupan espacio sin límite si no se limpian
+
+───────────────────────────────────────────────────────────────────
+SI NECESITAS RECUPERAR INFORMACIÓN:
+───────────────────────────────────────────────────────────────────
+
+Los logs eliminados NO se pueden recuperar.
+
+Si necesitas información de diagnóstico:
+1. El sistema genera nuevos logs automáticamente
+2. Los problemas nuevos crearán nuevos registros
+3. Para diagnóstico, usa: Win + R → eventvwr.msc
+
+───────────────────────────────────────────────────────────────────
+ALTERNATIVA: Guardar logs antes de limpiar
+───────────────────────────────────────────────────────────────────
+
+Si quieres mantener logs por seguridad:
+
+1. Presiona Win + R, escribe: eventvwr.msc
+2. En Visor de eventos → Windows Logs
+3. Clic derecho en cada categoría → "Guardar todos los eventos como..."
+4. Guarda en una carpeta de respaldo
+5. Luego ejecuta el script de limpieza
+
+───────────────────────────────────────────────────────────────────
+NO ES NECESARIO REVERTIR - LOS LOGS SON OPCIONALES
+────────────────────────────────────────────────═══════════════════

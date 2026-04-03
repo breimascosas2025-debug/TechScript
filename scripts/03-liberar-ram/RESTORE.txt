@@ -1,0 +1,45 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Liberación de Memoria RAM
+═══════════════════════════════════════════════════════════════════
+
+⚠️ ESTE SCRIPT NO REQUIERE REVERSIÓN
+
+Los cambios realizados son TEMPORALES y se ajustan automáticamente:
+→ Windows gestiona la memoria RAM dinámicamente
+→ Los procesos recuperan su memoria según necesiten
+→ Las prioridades se ajustan por el sistema operativo
+
+───────────────────────────────────────────────────────────────────
+¿QUÉ CAMBIA EL SCRIPT?
+───────────────────────────────────────────────────────────────────
+
+1. Working Set de procesos
+   → Reduce temporalmente el uso de memoria
+   → Los procesos recuperan memoria automáticamente
+
+2. Caché del sistema de archivos
+   → Limpia archivos en caché no usados
+   → Windows reconstruye la caché según necesidad
+
+3. Reinicio de Explorer
+   → Cierra y vuelve a abrir el explorador de Windows
+   → Libera handles de ventanas cerradas
+
+4. Prioridades de procesos
+   → Cambios temporales, Windows las readjusta
+
+───────────────────────────────────────────────────────────────────
+SI NOTAS PROBLEMAS (MUY RARO):
+───────────────────────────────────────────────────────────────────
+
+El sistema va más lento:
+→ Reinicia el equipo
+→ Todo volverá a la normalidad
+
+Un programa se cierra:
+→ Vuelve a abrir el programa
+→ Guarda tu trabajo con frecuencia
+
+───────────────────────────────────────────────────────────────────
+NO ES NECESARIO REVERTIR - TODO ES TEMPORAL
+────────────────────────────────────────────────═══════════════════

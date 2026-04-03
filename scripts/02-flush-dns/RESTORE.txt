@@ -1,0 +1,38 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Flush DNS
+═══════════════════════════════════════════════════════════════════
+
+⚠️ ESTE SCRIPT NO REQUIERE REVERSIÓN
+
+La caché DNS se reconstruye automáticamente cuando:
+→ Navegas por internet
+→ Los programas acceden a servidores
+→ Windows realiza resoluciones de nombres
+
+───────────────────────────────────────────────────────────────────
+¿QUÉ ES LA CACHÉ DNS?
+───────────────────────────────────────────────────────────────────
+Es una base de datos temporal que almacena las direcciones IP
+de los sitios web que visitas, para que carguen más rápido.
+
+Limpiarla no causa problemas, solo hace que:
+→ Los sitios carguen un poco más lento LA PRIMERA VEZ
+→ Se obtengan las direcciones IP más recientes
+→ Se resuelvan problemas de conectividad
+
+───────────────────────────────────────────────────────────────────
+SI NECESITAS RESTAURAR DNS ANTERIOR:
+───────────────────────────────────────────────────────────────────
+
+1. Abre Símbolo del sistema como Administrador
+2. Escribe: ipconfig /displaydns
+   (Muestra la caché actual, no se puede "restaurar" la anterior)
+
+La caché anterior ya no existe, pero eso es BUENO:
+→ Elimina entradas corruptas
+→ Obtiene información DNS fresca
+→ Resuelve conflictos de resolución
+
+───────────────────────────────────────────────────────────────────
+NO ES NECESARIO REVERTIR
+────────────────────────────────────────────────═══════════════════
