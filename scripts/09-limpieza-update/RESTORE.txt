@@ -1,0 +1,50 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Limpieza de Windows Update
+═══════════════════════════════════════════════════════════════════
+
+⚠️ ESTE SCRIPT NO REQUIERE REVERSIÓN
+
+Los cambios realizados son:
+→ Limpieza de archivos temporales de actualización
+→ Regeneración de carpetas de caché
+→ Reinicio de servicios
+
+Todo se regenera automáticamente cuando Windows Update funciona.
+
+───────────────────────────────────────────────────────────────────
+¿QUÉ CAMBIA EL SCRIPT?
+───────────────────────────────────────────────────────────────────
+
+SoftwareDistribution:
+→ Carpeta que almacena descargas de actualizaciones
+→ Se regenera automáticamente
+→ Windows descarga nuevamente las actualizaciones necesarias
+
+Catroot2:
+→ Carpeta de certificados para actualizaciones
+→ Windows la regenera automáticamente
+→ Contiene datos que se pueden reconstruir
+
+Servicios reiniciados:
+→ wuauserv (Windows Update)
+→ cryptSvc (Servicios de cifrado)
+→ bits (Transferencia inteligente)
+→ msiserver (Instalador de Windows)
+
+───────────────────────────────────────────────────────────────────
+SI WINDOWS UPDATE NO FUNCIONA DESPUÉS:
+───────────────────────────────────────────────────────────────────
+
+1. Reinicia el equipo completamente
+2. Ejecuta el script nuevamente
+3. Si persiste, usa el Solucionador de problemas:
+   Configuración → Actualización y seguridad → Solucionar problemas
+   → Solucionadores de problemas adicionales → Windows Update
+
+4. Comando alternativo (PowerShell como Admin):
+   Get-TroubleshootingPack -Path C:\Windows\Diagnostics\System\WindowsUpdate |
+   Invoke-TroubleshootingPack
+
+───────────────────────────────────────────────────────────────────
+NO ES NECESARIO REVERTIR - WINDOWS UPDATE SE RECONSTRUYE SOLO
+────────────────────────────────────────────────═══════════════════

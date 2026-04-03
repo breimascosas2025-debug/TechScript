@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Optimización Total PRO
+═══════════════════════════════════════════════════════════════════
+
+✅ PUNTO DE RESTAURACIÓN INCLUIDO
+
+Este script crea automáticamente un punto de restauración llamado
+"OptimizacionTotal_PRO" antes de hacer cualquier cambio.
+
+───────────────────────────────────────────────────────────────────
+MÉTODO RECOMENDADO: RESTAURAR SISTEMA
+───────────────────────────────────────────────────────────────────
+
+1. Presiona Win + R, escribe: rstrui.exe
+2. Haz clic en "Siguiente"
+3. Selecciona el punto "OptimizacionTotal_PRO"
+4. Haz clic en "Siguiente" y luego "Finalizar"
+5. El equipo se reiniciará y volverá al estado anterior
+
+Esto revierte TODOS los cambios realizados por el script.
+
+───────────────────────────────────────────────────────────────────
+REVERSIONES MANUALES ESPECÍFICAS:
+───────────────────────────────────────────────────────────────────
+
+Si prefieres no restaurar todo el sistema:
+
+TELEMETRÍA:
+1. services.msc → DiagTrack → Automático
+2. services.msc → dmwappushservice → Automático
+3. regedit → Eliminar AllowTelemetry
+
+SUPERFETCH:
+1. regedit → HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\
+   Session Manager\Memory Management\PrefetchParameters
+2. EnableSuperfetch = 1
+
+HIBERNACIÓN:
+1. Ejecuta como Admin: powercfg /hibernate on
+
+SERVICIOS:
+1. services.msc → Habilita los servicios que necesites
+
+───────────────────────────────────────────────────────────────────
+NOTA IMPORTANTE:
+───────────────────────────────────────────────────────────────────
+
+La mayoría de los cambios son TEMPORALES o BENEFICIOSOS:
+→ Limpieza de archivos: No es necesario revertir
+→ Reparación del sistema: No se revierte (corrige errores)
+→ Optimización de memoria: Temporal, se ajusta sola
+
+Usa la Restauración del Sistema solo si experimentas problemas.
+
+───────────────────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════════════
