@@ -1,0 +1,58 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Optimización de Inicio
+═══════════════════════════════════════════════════════════════════
+
+✅ REVERSIÓN PARCIAL: Algunos cambios se pueden revertir manualmente
+
+───────────────────────────────────────────────────────────────────
+REVERTIR PROGRAMAS DEL INICIO:
+───────────────────────────────────────────────────────────────────
+
+1. Presiona Ctrl + Shift + Esc (Administrador de tareas)
+2. Ve a la pestaña "Inicio"
+3. Haz clic derecho en el programa → "Habilitar"
+
+Para OneDrive específicamente:
+1. Abre OneDrive desde el menú Inicio
+2. Configuración → Configuración
+3. Marca "Iniciar OneDrive automáticamente..."
+
+───────────────────────────────────────────────────────────────────
+REVERTIR CORTANA:
+───────────────────────────────────────────────────────────────────
+
+1. Presiona Win + R, escribe: regedit
+2. Navega a:
+   HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search
+3. Cambia "AllowCortana" a 1 (o elimina el valor)
+4. Reinicia el equipo
+
+───────────────────────────────────────────────────────────────────
+REVERTIR HIBERNACIÓN:
+───────────────────────────────────────────────────────────────────
+
+1. Abre Símbolo del sistema como Administrador
+2. Escribe: powercfg /hibernate on
+3. Presiona Enter
+4. Reinicia el equipo
+
+───────────────────────────────────────────────────────────────────
+REVERTIR TAREAS PROGRAMADAS:
+───────────────────────────────────────────────────────────────────
+
+1. Presiona Win + R, escribe: taskschd.msc
+2. Navega a: Biblioteca del Programador de tareas
+   → Microsoft → Windows
+3. Busca las tareas desactivadas
+4. Clic derecho → "Habilitar"
+
+───────────────────────────────────────────────────────────────────
+NOTA IMPORTANTE
+────────────────────────────────────────────────────────────────═══
+Los cambios en el registro pueden revertirse manualmente.
+El script no incluye un revertir automático porque:
+→ Algunos usuarios quieren mantener ciertos cambios
+→ Las preferencias son personales
+→ Puedes habilitar selectivamente lo que necesites
+
+═══════════════════════════════════════════════════════════════════

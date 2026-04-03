@@ -1,0 +1,69 @@
+═══════════════════════════════════════════════════════════════════
+  CÓMO REVERTIR - Eliminación de Bloatware
+═══════════════════════════════════════════════════════════════════
+
+✅ TODAS LAS APPS SE PUEDEN REINSTALAR
+
+───────────────────────────────────────────────────────────────────
+REINSTALAR APPS DESDE MICROSOFT STORE:
+───────────────────────────────────────────────────────────────────
+
+1. Abre Microsoft Store
+2. Busca la aplicación que quieres reinstalar
+3. Haz clic en "Instalar"
+
+Apps disponibles:
+→ 3D Builder, Alarms, Mail, Calendar
+→ Maps, Weather, News, Sports
+→ OneNote, Voice Recorder, Solitaire
+→ Xbox, Movies & TV, Groove Music
+
+───────────────────────────────────────────────────────────────────
+REINSTALAR ONEDRIVE:
+───────────────────────────────────────────────────────────────────
+
+1. Descarga desde: https://www.microsoft.com/onedrive
+2. Ejecuta el instalador
+3. Inicia sesión con tu cuenta
+
+O desde Microsoft Store:
+→ Busca "OneDrive" e instala
+
+───────────────────────────────────────────────────────────────────
+REINSTALAR TEAMS:
+───────────────────────────────────────────────────────────────────
+
+Versión personal:
+→ Microsoft Store → busca "Microsoft Teams"
+
+Versión empresarial/educación:
+→ Descarga desde: https://teams.microsoft.com/download
+
+───────────────────────────────────────────────────────────────────
+REVERTIR CONFIGURACIÓN DE PUBLICIDAD:
+───────────────────────────────────────────────────────────────────
+
+1. Presiona Win + R, escribe: regedit
+2. Navega a:
+   HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+3. Cambia estos valores a 1 (o elimínalos):
+   - SystemPaneSuggestionsEnabled
+   - SilentInstalledAppsEnabled
+   - ContentDeliveryAllowed
+   - OemPreInstalledAppsEnabled
+   - PreInstalledAppsEnabled
+   - PreInstalledAppsEverEnabled
+4. Reinicia el equipo
+
+───────────────────────────────────────────────────────────────────
+REINSTALAR TODAS LAS APPS CON POWERSHELL:
+───────────────────────────────────────────────────────────────────
+
+1. Abre PowerShell como Administrador
+2. Ejecuta:
+   Get-AppxPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+
+Esto reinstala TODAS las apps predeterminadas.
+
+───────────────────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════════════
